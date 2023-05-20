@@ -18,7 +18,6 @@ export const App = () => {
         flexDirection: 'column',
       }}
     >
-      {/* <Profile profileData={profileData} /> */}
       <Profile
         username={profileData.username}
         tag={profileData.tag}
