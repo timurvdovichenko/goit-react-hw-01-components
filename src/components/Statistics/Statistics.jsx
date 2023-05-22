@@ -6,7 +6,7 @@ import { PageTitle } from './PageTitle';
 export const Statistics = ({ title, stats }) => {
   return (
     <section className={css.statistics}>
-      <PageTitle title={title} />
+      {title && <PageTitle title={title} />}
       <ul className={css.stat_list}>
         {stats.map(({ id, label, percentage }) => {
           return <StatItem key={id} label={label} percentage={percentage} />;
